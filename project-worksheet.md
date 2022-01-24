@@ -17,9 +17,9 @@ This project is my portfolio webpage. It will use html, css, javascript and jque
 
 ## Wireframes
 
-- [Mobile](https://res.cloudinary.com/djqfsbgaf/image/upload/v1643054644/sei%20project01-portfolio/mobile_wireframe_vzrmao.heic)
-- [Tablet](https://res.cloudinary.com/djqfsbgaf/image/upload/v1643054644/sei%20project01-portfolio/tablet_wireframe_szc22x.heic)
-- [Desktop](https://res.cloudinary.com/djqfsbgaf/image/upload/v1643054647/sei%20project01-portfolio/desktop_wireframe_iufy94.heic)
+- [Mobile](https://res.cloudinary.com/djqfsbgaf/image/upload/v1643057072/sei%20project01-portfolio/mobile_wireframe_xwnpoj.jpg)
+- [Tablet](https://res.cloudinary.com/djqfsbgaf/image/upload/v1643057070/sei%20project01-portfolio/tablet_wireframe_gvkdmo.jpg)
+- [Desktop](https://res.cloudinary.com/djqfsbgaf/image/upload/v1643057074/sei%20project01-portfolio/desktop_wireframe_toy7gq.jpg)
 
 ## Time/Priority Matrix
 
