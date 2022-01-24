@@ -1,0 +1,71 @@
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+ul {
+  display: none;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  padding: auto;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.project-main-container h3 {
+  text-decoration: underline;
+}
+
+.project01-container,
+.project02-container,
+.project03-container {
+  display: flex;
+  justify-content: center;
+}
+
+.project01-sub-container,
+.project02-sub-container,
+.project03-sub-container {
+  display: flexbox;
+  justify-content: center;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.project02-sub-container {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.about-me-container {
+  display: flexbox;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.about-me-icon-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-container,
+.contact-container form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container {
+  padding-bottom: 20px;
+}
