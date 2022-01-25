@@ -12,41 +12,43 @@
 </head>
 <body>
     <div class="wrapper">
-        <nav>
-            <h3>Austin Cesear</h3>
-            <ul>
-                <li>Projects</li>
-                <li>About Me</li>
-                <li>Contact</li>
-            </ul>
-            <i class="bi bi-list"></i>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+                <h3 class="navbar-brand navbar-dark">Austin Cesear</h3>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false"><i class="bi bi-list text-white"></i></button>
+                <div class="collapse navbar-collapse" id="navbarToggle">
+                    <ul class="navbar-nav navbar-dark">
+                        <li class="nav-item navbar-dark"><a href="#" class="nav-link">Projects</a></li>
+                        <li class="nav-item navbar-dark"><a href="#" class="nav-link">About Me</a></li>
+                        <li class="nav-item navbar-dark"><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
         </nav>
         <section class="carousel-container">
-            <img src="https://picsum.photos/300/200" alt="">
+            <img src="https://picsum.photos/300/200" class=" alt="">
         </section>
         <section class="project-main-container">
             <hr>
             <article class="project01-container">
-                <img src="https://picsum.photos/150/100" alt="">
+                <img src="https://picsum.photos/150/100" class="" alt="">
                 <div class="project01-sub-container">
-                    <h3>Project 1</h3>
-                    <p>Short Description</p>
+                    <h4>Project 1</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </article>
             <hr>
             <article class="project02-container">
                 <div class="project02-sub-container">
-                    <h3>Project 2</h3>
-                    <p>Short Description</p>
+                    <h4>Project 2</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <img src="https://picsum.photos/150/100" alt="">
+                <img src="https://picsum.photos/150/100" class="" alt="">
             </article>
             <hr>
             <article class="project03-container">
-                <img src="https://picsum.photos/150/100" alt="">
+                <img src="https://picsum.photos/150/100" class="" alt="">
                 <div class="project03-sub-container">
-                    <h3>Project 3</h3>
-                    <p>Short Description</p>
+                    <h4>Project 3</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 </div>
             </article>
             <hr>
@@ -64,12 +66,20 @@
         </section>
         <hr>
         <section class="contact-container">
-            <h3>Get In Touch</h3>
+            <h4>Get In Touch</h4>
             <p>Leave your email and a message:</p>
             <form action="">
-                <input type="email" name="" id="" placeholder="Email">
-                <textarea name="" id="" cols="20" rows="2">Message</textarea>
-                <button>Submit</button>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" placeholder="Message"></textarea>
+                </div>
+                <div class="mb-3">
+                    <button type="button" class="btn btn-light">Submit</button>
+                </div>
+                  
+                  
             </form>
         </section>
 

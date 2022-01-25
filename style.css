@@ -2,16 +2,22 @@ nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 5px 10px;
+  padding: 0 10px;
 }
 
-ul {
-  display: none;
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .carousel-container {
   display: flex;
   justify-content: center;
+}
+
+.carousel-container img {
+  width: 100%;
+  height: auto;
 }
 
 hr {
@@ -21,7 +27,11 @@ hr {
   margin-right: 25%;
 }
 
-.project-main-container h3 {
+.project-main-container {
+  padding: 0 20px;
+}
+
+.project-main-container h4 {
   text-decoration: underline;
 }
 
@@ -30,12 +40,14 @@ hr {
 .project03-container {
   display: flex;
   justify-content: center;
+  padding-top: 5px;
 }
 
 .project01-sub-container,
 .project02-sub-container,
 .project03-sub-container {
-  display: flexbox;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-left: 10px;
   text-align: center;
@@ -44,6 +56,11 @@ hr {
 .project02-sub-container {
   margin-left: 0;
   margin-right: 10px;
+}
+
+.project-main-container img {
+  width: 50%;
+  height: 50%;
 }
 
 .about-me-container {
