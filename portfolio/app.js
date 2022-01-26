@@ -3,11 +3,12 @@ $(() => {
 
   function submitForm(event) {
     event.preventDefault();
-    const $email = $(".email").val();
-    const $message = $(".message").val();
+    const $name = $(".name").val();
     $(".filler").replaceWith(
-      '<div class="alert alert-success alert-dismissible" role="alert">A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.<button type="button" class="btn-close" data-bs-dismiss="" aria-label="Close"></button></div>'
+      `<div class="alert alert-success alert-dismissible text-center" role="alert"><i class="bi bi-check-circle-fill"></i> Message successfully sent, ${$name}! <button type="button" class="btn-close" data-bs-dismiss="" aria-label="Close"></button></div>`
     );
+    $(".name").val("");
+    $(".message").val("");
   }
   $form.on("submit", submitForm);
 

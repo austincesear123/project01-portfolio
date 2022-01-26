@@ -92,6 +92,10 @@ hr {
   justify-content: space-evenly;
 }
 
+.filler {
+  padding-top: 74px;
+}
+
 .contact-container,
 .contact-sub-container,
 .contact-container form {
@@ -193,10 +197,6 @@ hr {
 
   .about-me-container {
     margin: 0 80px 50px 80px;
-  }
-
-  .filler {
-    padding-top: 74px;
   }
 
   .contact-container {
