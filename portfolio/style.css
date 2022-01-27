@@ -40,15 +40,16 @@ nav {
   height: auto;
 }
 
-.carousel-container {
+/* .carousel-container {
   display: none;
-}
+} */
 
 hr {
   padding: auto;
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
+  color: #1c1c1c;
 }
 
 h4 {
@@ -63,7 +64,7 @@ h4 {
 
 .project-main-container h4 {
   text-decoration: underline;
-  color: black;
+  color: #497ffd;
 }
 
 .project01-container,
@@ -72,7 +73,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 5px;
+  padding: 5px 10px;
   background-color: #e3e3dd;
 }
 
@@ -93,6 +94,7 @@ h4 {
   padding-top: 10px;
   margin-left: 10px;
   text-align: center;
+  font-family: "Lato", sans-serif;
 }
 
 .project02-sub-container {
@@ -121,9 +123,10 @@ h4 {
   justify-content: space-evenly;
 }
 
-/* .btn-primary {
-  background-color: #2191fb;
-} */
+.bi-linkedin,
+.bi-github {
+  color: #1c1c1c;
+}
 
 .filler {
   padding-top: 74px;
@@ -186,6 +189,7 @@ h4 {
     flex-direction: row;
     justify-content: center;
     margin: 50px 0;
+    gap: 10px;
   }
 
   .project-main-container hr {
@@ -208,20 +212,12 @@ h4 {
     flex-direction: column;
   }
 
-  .project01-container {
-    padding-left: 0;
-  }
-
   .project02-container {
     flex-direction: column-reverse;
   }
 
-  .project03-container {
-    padding-right: 0;
-  }
-
   .vertical-line {
-    border-right: 1px solid rgba(0, 0, 0, 0.25);
+    /* border-right: 1px solid rgba(0, 0, 0, 0.25); */
   }
 
   .project01-sub-container,
@@ -239,7 +235,7 @@ h4 {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 0 50px 0;
+    padding: 20px 0 50px 0;
   }
 
   .contact-container form {
