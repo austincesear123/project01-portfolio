@@ -1,5 +1,5 @@
 body {
-  font-family: "Catamaran", sans-serif;
+  font-family: "Barlow", sans-serif;
   background-color: #f1f1f1;
 }
 
@@ -7,21 +7,27 @@ nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
   padding: 0 10px;
 }
 
 .navbar {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .logo {
   font-family: "Poppins", sans-serif;
   color: #0b25ff;
+  margin: 0;
 }
 
 .navbar-expand {
   display: none;
+}
+
+.navbar-nav {
+  font-family: "Catamaran", sans-serif;
 }
 
 .mobile-image-container {
@@ -46,16 +52,18 @@ hr {
 }
 
 h4 {
-  font-family: "Poppins", sans-serif;
-  color: #0b25ff;
+  font-family: "Roboto Mono", monospace;
+  color: #2191fb;
 }
 
 .project-main-container {
   padding: 0 20px;
+  color: #1c1c1c;
 }
 
 .project-main-container h4 {
   text-decoration: underline;
+  color: black;
 }
 
 .project01-container,
@@ -65,6 +73,11 @@ h4 {
   justify-content: center;
   align-items: center;
   padding-top: 5px;
+  background-color: #e3e3dd;
+}
+
+.project02-container {
+  background-color: #e0e0e0;
 }
 
 .vertical-line {
@@ -80,7 +93,6 @@ h4 {
   padding-top: 10px;
   margin-left: 10px;
   text-align: center;
-  background-color: white;
 }
 
 .project02-sub-container {
@@ -98,14 +110,20 @@ h4 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding: 15px;
   margin: 0 20px;
-  background-color: white;
+  background-color: #e3dee1;
+  color: black;
 }
 
 .about-me-icon-container {
   display: flex;
   justify-content: space-evenly;
 }
+
+/* .btn-primary {
+  background-color: #2191fb;
+} */
 
 .filler {
   padding-top: 74px;
@@ -120,7 +138,7 @@ h4 {
 }
 
 .contact-container {
-  padding-bottom: 20px;
+  padding: 20px 0;
   margin: 0 20px;
   background-color: white;
 }
