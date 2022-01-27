@@ -5,7 +5,7 @@ $(() => {
     event.preventDefault();
     const $name = $(".name").val();
     $(".filler").replaceWith(
-      `<div class="alert alert-success alert-dismissible text-center" role="alert"><i class="bi bi-check-circle-fill"></i> Message successfully sent, ${$name}! <button type="button" class="btn-close" data-bs-dismiss="" aria-label="Close"></button></div>`
+      `<div class="alert alert-success alert-dismissible text-center" role="alert"><i class="bi bi-check-circle-fill"></i> Message sent successfully, ${$name}! <button type="button" class="btn-close" data-bs-dismiss="" aria-label="Close"></button></div>`
     );
     $(".name").val("");
     $(".message").val("");

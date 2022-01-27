@@ -1,3 +1,8 @@
+body {
+  font-family: "Catamaran", sans-serif;
+  background-color: #f1f1f1;
+}
+
 nav {
   display: flex;
   width: 100%;
@@ -11,7 +16,8 @@ nav {
 }
 
 .logo {
-  color: white;
+  font-family: "Poppins", sans-serif;
+  color: #0b25ff;
 }
 
 .navbar-expand {
@@ -39,6 +45,11 @@ hr {
   margin-right: 25%;
 }
 
+h4 {
+  font-family: "Poppins", sans-serif;
+  color: #0b25ff;
+}
+
 .project-main-container {
   padding: 0 20px;
 }
@@ -52,6 +63,7 @@ hr {
 .project03-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 5px;
 }
 
@@ -65,8 +77,10 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 10px;
   margin-left: 10px;
   text-align: center;
+  background-color: white;
 }
 
 .project02-sub-container {
@@ -84,7 +98,8 @@ hr {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 0 20px;
+  margin: 0 20px;
+  background-color: white;
 }
 
 .about-me-icon-container {
@@ -106,12 +121,15 @@ hr {
 
 .contact-container {
   padding-bottom: 20px;
+  margin: 0 20px;
+  background-color: white;
 }
 
 /* T A B L E T  */
 @media only screen and (min-width: 768px) {
   .wrapper {
     margin: 0 46.5px;
+    padding: 0 20px;
   }
   .mobile-image-container {
     display: none;
