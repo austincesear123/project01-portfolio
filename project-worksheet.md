@@ -4,11 +4,11 @@
 
 | Day   | Deliverable                            | Status     |
 | ----- | -------------------------------------- | ---------- |
-| Day 1 | Finish worksheet                       | Incomplete |
-| Day 1 | Mobile layout and Base Styling         | Incomplete |
-| Day 2 | Tablet/Desktop layout and Base Styling | Incomplete |
-| Day 3 | MVPs and Styling                       | Incomplete |
-| Day 4 | Fix bugs, polish Styling, and any misc | Incomplete |
+| Day 1 | Finish worksheet                       | Complete   |
+| Day 1 | Mobile layout and Base Styling         | Complete   |
+| Day 2 | Tablet/Desktop layout and Base Styling | Complete   |
+| Day 3 | MVPs and Styling                       | Complete   |
+| Day 4 | Fix bugs, polish Styling, and any misc | Complete   |
 | Day 5 | Present                                | Incomplete |
 
 ## Project Description
@@ -42,34 +42,55 @@ This project is my portfolio webpage. It will use html, css, javascript and jque
 
 | Component                                    | Priority | Estimated Time | Actual Time |
 | -------------------------------------------- | :------: | :------------: | :---------: |
-| Responsive layouts (mobile, tablet, desktop) |    H     |      3hr       |     hr      |
-| Styling                                      |    H     |      2hr       |     hr      |
-| Sticky navbar                                |    H     |      1hr       |     hr      |
-| navbar hamburger menu for mobile             |    H     |      2hr       |     hr      |
-| Image carousel                               |    H     |      2hr       |     hr      |
-| 3 project sections                           |    H     |      2hr       |     hr      |
-| About me/skills section                      |    H     |      1hr       |     hr      |
-| "Get in touch" section                       |    H     |      1hr       |     hr      |
-| "Get in touch" form                          |    M     |      2hr       |     hr      |
-| Total                                        |    H     |     16hrs      |     hrs     |
+| Responsive layouts (mobile, tablet, desktop) |    H     |      3hr       |     3hr     |
+| Styling                                      |    H     |      2hr       |     4hr     |
+| Sticky navbar                                |    H     |      1hr       |     1hr     |
+| navbar hamburger menu for mobile             |    H     |      2hr       |     1hr     |
+| Image carousel                               |    H     |      2hr       |     2hr     |
+| 3 project sections                           |    H     |      2hr       |     2hr     |
+| About me/skills section                      |    H     |      1hr       |     1hr     |
+| "Get in touch" section                       |    H     |      1hr       |     1hr     |
+| "Get in touch" form                          |    M     |      2hr       |     2hr     |
+| Total                                        |    H     |     16hrs      |    17hrs    |
 
 #### PostMVP
 
 | Component                                    | Priority | Estimated Time | Actual Time |
 | -------------------------------------------- | :------: | :------------: | :---------: |
-| Hover animations                             |    L     |     1.5hr      |     hr      |
-| Additional design styles                     |    L     |      2hr       |     hr      |
-| Specific images that are relevant to section |    L     |      2hr       |     hr      |
-| Total                                        |    H     |     5.5hrs     |     hrs     |
+| Hover animations                             |    L     |     1.5hr      |     -hr     |
+| Additional design styles                     |    L     |      2hr       |     4hr     |
+| Specific images that are relevant to section |    L     |      2hr       |     -hr     |
+| Total                                        |    H     |     5.5hrs     |    4hrs     |
 
 ## Additional Libraries
 
-Bootstrap
+Bootstrap/Bootstrap Icons and Jquery
 
 ## Code Snippet
 
-- Code snippet will go here
+I used this jquery to interact with the dom when a user submits the form. When the user clicks submit it replaces a div used as filler with a bootstrap alert that uses the name input value for the users name. Then the user clicks the 'x' button to remove the alert, the alert goes away and is replaced with the filler div again.
+
+```
+  const $form = $("#contactForm");
+
+  function submitForm(event) {
+    event.preventDefault();
+    const $name = $(".name").val();
+    $(".filler").replaceWith(
+      `<div class="alert alert-success alert-dismissible text-center" role="alert"><i class="bi bi-check-circle-fill"></i> Message sent successfully, ${$name}! <button type="button" class="btn-close" data-bs-dismiss="" aria-label="Close"></button></div>`
+    );
+    $(".name").val("");
+    $(".message").val("");
+  }
+  $form.on("submit", submitForm);
+
+  function replaceFiller() {
+    const $filler = $('<div class="filler">');
+    $(".alert").replaceWith($filler);
+  }
+  $(".wrapper").on("click", ".btn-close", replaceFiller);
+```
 
 ## Issues and Resolutions
 
-- Issues and Resolutions will go here
+Most of my issues involved styling and getting things to look well together/the way I wanted. One example was figuring out how to control the size of the bootstrap carousel. I google searched 'bootstrap 5 carousel size' and I found this thread to be the most helpful: "https://forum.bootstrapstudio.io/t/how-do-you-decrease-carousel-size/5109". That's when I used the div.wrapper to control the width of the carousel and give the rest of the page a border.
