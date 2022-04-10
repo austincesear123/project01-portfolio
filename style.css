@@ -32,6 +32,7 @@ nav {
 }
 
 .mobile-image-container {
+  background-color: black;
   display: flex;
   justify-content: center;
   margin: 16px 0;
@@ -43,6 +44,7 @@ nav {
 .mobile-image {
   width: 100%;
   height: auto;
+  opacity: 0;
 }
 
 /* .carousel-container {
@@ -120,6 +122,7 @@ h4 {
 }
 
 .about-me-container {
+  font-family: "Catamaran", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -265,6 +268,8 @@ h4 {
   .project02-container,
   .project03-container {
     padding: 20px 20px;
+    max-width: 33%;
+    justify-content: flex-start;
   }
 
   .project01-container,
@@ -274,6 +279,7 @@ h4 {
 
   .project02-container {
     flex-direction: column-reverse;
+    justify-content: flex-end;
   }
 
   /* .vertical-line {
@@ -287,8 +293,13 @@ h4 {
     padding-top: 10px;
   }
 
+  .project-img {
+    max-height: 40%;
+    object-fit: contain;
+  }
+
   .about-me-container {
-    margin: 64px 200px 100px;
+    margin: 64px 100px 100px;
   }
 
   .contact-container {
